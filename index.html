@@ -14,21 +14,26 @@
       font-family: "Verdana","Arial", sans-serif;
       font-size: 2em;
       margin: 20px;
-      border-style: solid
+      /*border-style: solid
       border-color: grey;
-      padding: 15px;
+      padding: 15px;*/
     }
     p {
       color: black;
       font-family: "Helvetica","Arial", sans-serif;
       line-height: 1.5em;
-      margin: 20px;
-      border-style: solid
+      /*border-style: solid
       border-color: grey;
-      padding: 4px;
+      padding: 4px;*/
     }
     img {
       margin:20px;
+    }
+    #text_info {
+      margin: 20px;
+      border-style: dotted;
+      border-color: lightslategrey;
+      padding: 5px;
     }
     </style>
   </head>
@@ -36,14 +41,17 @@
   <body>
     <h1>Ahsan Azim</h1>
     <img src="https://raw.githubusercontent.com/ahsanazim/ahsanazim.me/gh-pages/official_photo.jpg">
-    <p>That's me ^<br><br> I created this website for my web dev class at
+    <p id="img_caption">That's me ^<br></p>
+    <div id="text_info">
+    <p id="cs_info">I created this website for my web dev class at
       Dartmouth. I've never done web development before, so it currently only uses
       html and some rudimentary CSS. I'm planning to add some javascript too!</p>
-    <p> Later, once the course is over, I may adapt this website to my own needs.
+    <p id="future_plans"> Later, once the course is over, I may adapt this website to my own needs.
       I'm not sure what I'll have up there - maybe descriptions of various
       personal projects? <br><br> For now, here's a
       <a target="_blank" href="https://www.linkedin.com/in/ahsanazim1">link </a>
       to my linkedin page!
     </p>
+    </div>
   </body>
 </html>
