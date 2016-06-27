@@ -8,29 +8,29 @@ $(document).ready(function() {
   $("#nav_home").click(function() {
     console.log("#nav_home clicked");
     $('html, body').animate({
-      scrollTop: $( $(this).attr('href') ).offset().top
+      scrollTop: $( "#home" ).offset().top
     }, 500);
     return false;
   });
   $("#nav_this_website").click(function() {
     console.log("#nav_this_website clicked");
     $('html, body').animate({
-      scrollTop: $( $(this).attr('href') ).offset().top
+      scrollTop: $( "#this_website" ).offset().top
     }, 500);
     return false;
   });
   $("#nav_contact").click(function() {
     console.log("#nav_contact clicked");
     $('html, body').animate({
-      scrollTop: $( $(this).attr('href') ).offset().top
+      scrollTop: $( "#contact" ).offset().top
     }, 500);
     return false;
   });
   $("#nav_about").click(function() {
     console.log("#nav_about clicked");
     $('html, body').animate({
-      scrollTop: $( $(this).attr('href') ).offset().top
+      scrollTop: $( "#about" ).offset().top
     }, 500);
-    return false; 
+    return false;
   });
 });
