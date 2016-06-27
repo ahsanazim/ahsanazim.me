@@ -8,7 +8,7 @@ $(document).ready(function() {
   $("#nav_home").click(function() {
     console.log("#nav_home clicked");
     $('html, body').animate({
-      scrollTop: $( "#nav_bar" ).offset().top - 50
+      scrollTop: $( "#nav_bar" ).offset().top
     }, 500);
     return false;
   });
