@@ -35,7 +35,7 @@ p {
 #footer_div {
   border-top-color: white;
   border-top-width: thick;
-  border-top-style: dashed;
+  border-top-style: double;
   font-family: Cambria, Georgia, serif;
   background-color: black;
   width: 100%;
