@@ -33,7 +33,7 @@ p {
 }
 
 #footer_div {
-  border-top-color: white;
+  border-top-color: black;
   border-top-width: thick;
   border-top-style: double;
   font-family: "Lucida Console", Monaco, monospace;
@@ -46,7 +46,7 @@ p {
   background-color: black;
   line-height: 2em;
   text-align: center;
-  font-size: 0.65em;
+  font-size: 0.75em;
   color: white;
   width: 100%;
   padding: 20px;
