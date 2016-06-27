@@ -29,7 +29,7 @@ p {
   line-height: 1.5em;
   margin-left: 20px;
   margin-right:7px;
-  width: 50%;
+  width: 65%;
 }
 
 #text_info {
@@ -53,6 +53,7 @@ p {
   line-height: 1.5em;
   text-align: center;
   font-size: 1.5em;
+  width: 100%;
 }
 
 .blue {
