@@ -23,6 +23,15 @@ html, body {
   padding-top: 50px;
 }
 
+p {
+  color: black;
+  font-family: "HelveticaNeue-Light","Helvetica","Lucida Grande", "Arial", sans-serif;
+  line-height: 1.5em;
+  margin-left: 20px;
+  margin-right:7px;
+  width: 65%;
+}
+
 #footer {
   border-top-color: black;
   border-top-width: thick;
@@ -34,15 +43,6 @@ html, body {
   font-size: 1em;
   color: red !important;
   width: 100%;
-}
-
-p {
-  color: black;
-  font-family: "HelveticaNeue-Light","Helvetica","Lucida Grande", "Arial", sans-serif;
-  line-height: 1.5em;
-  margin-left: 20px;
-  margin-right:7px;
-  width: 65%;
 }
 
 #text_info {
