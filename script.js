@@ -6,6 +6,6 @@ $(document).ready(function() {
   $(".main_heading").effect( "pulsate", {times:3}, 3000 );
 });
 
-$( "#home" ).click(function() {
+$("#nav_home").click(function() {
   console.log("home button clicked")
 });
