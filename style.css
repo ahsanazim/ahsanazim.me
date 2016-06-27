@@ -31,15 +31,13 @@ html, body {
   background-color: black;
   line-height: 1.5em;
   text-align: center;
-  /*text-indent: 30px;*/
   font-size: 1em;
-  color: red;
+  !important color: red;
   width: 100%;
 }
 
 p {
   color: black;
-  /*font-family: "Helvetica","Arial", sans-serif;*/
   font-family: "HelveticaNeue-Light","Helvetica","Lucida Grande", "Arial", sans-serif;
   line-height: 1.5em;
   margin-left: 20px;
@@ -53,7 +51,6 @@ p {
 }
 #academic_interests_list {
   padding: 4px;
-  /*font-family: "Helvetica","Arial", sans-serif;*/
   font-family: "HelveticaNeue-Light","Helvetica","Lucida Grande", "Arial", sans-serif;
   line-height: 1.5em;
   overflow: hidden;
