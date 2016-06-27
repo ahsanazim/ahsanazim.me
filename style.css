@@ -53,8 +53,8 @@ p {
   background-color: black;
   line-height: 1.5em;
   text-align: center;
-  text-indent: 30px;
-  font-size: 0.25em;
+  /*text-indent: 30px;*/
+  font-size: 0.55em;
   color: white;
   width: 100%;
 }
