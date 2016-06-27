@@ -22,6 +22,21 @@ html, body {
   padding: 10px;
   padding-top: 50px;
 }
+
+#footer {
+  border-top-color: black;
+  border-top-width: thick;
+  border-top-style: double;
+  font-family: "Lucida Console", Monaco, monospace;
+  background-color: black;
+  line-height: 1.5em;
+  text-align: center;
+  /*text-indent: 30px;*/
+  font-size: 1em;
+  color: red;
+  width: 100%;
+}
+
 p {
   color: black;
   /*font-family: "Helvetica","Arial", sans-serif;*/
@@ -43,20 +58,6 @@ p {
   line-height: 1.5em;
   overflow: hidden;
   list-style-position:inside;
-}
-
-#footer {
-  border-top-color: black;
-  border-top-width: thick;
-  border-top-style: double;
-  font-family: "Lucida Console", Monaco, monospace;
-  background-color: black;
-  line-height: 1.5em;
-  text-align: center;
-  /*text-indent: 30px;*/
-  font-size: 1em;
-  color: red;
-  width: 100%;
 }
 
 .blue {
