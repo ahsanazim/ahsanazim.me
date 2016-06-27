@@ -36,16 +36,16 @@ p {
   border-top-color: black;
   border-top-width: thick;
   border-top-style: double;
-  font-family: "Lucida Console", Monaco, monospace;
+  font-family: Cambria, Georgia, serif;
   background-color: black;
   width: 100%;
   margin-top: 30px;
 }
 
 #footer {
-  font-family: Cambria, Georgia, serif;
+  font-family: Georgia, Serif;
   background-color: black;
-  line-height: 2em;
+  line-height: 1.5em;
   text-align: center;
   font-size: 0.75em;
   color: white;
