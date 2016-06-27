@@ -4,8 +4,7 @@
 $(document).ready(function() {
   $("#nav_bar").hide().delay(3000).fadeIn();
   $(".main_heading").effect( "pulsate", {times:3}, 3000 );
-});
-
-$("#nav_home").click(function() {
-  console.log("home button clicked")
+  $("#nav_home").click(function() {
+    console.log("home button clicked")
+  });
 });
