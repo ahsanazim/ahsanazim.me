@@ -45,6 +45,16 @@ p {
   list-style-position:inside;
 }
 
+#footer {
+  border-top-color: black;
+  border-top-width: medium;
+  border-top-style: double;
+  font-family: "Lucida Console", Monaco, monospace;
+  line-height: 1.5em;
+  text-align: center;
+  font-size: 1.5em;
+}
+
 .blue {
   color: #00CCFF;
 }
