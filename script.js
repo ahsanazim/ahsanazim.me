@@ -7,13 +7,13 @@ $(document).ready(function() {
   $(".main_heading").effect( "pulsate", {times:2}, 2500);
   $("#nav_home").click(function() {
     $('html, body').animate({
-      scrollTop: $( "#nav_bar" ).offset().top
+      scrollTop: $( "#nav_home" ).offset().top
     }, 500);
     return false;
   });
   $("#nav_this_website").click(function() {
     $('html, body').animate({
-      scrollTop: $( "#text_info" ).offset().top - 250
+      scrollTop: $( "#text_info" ).offset().top - 50
     }, 500);
     return false;
   });
