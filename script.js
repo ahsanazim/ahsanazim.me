@@ -1,7 +1,17 @@
 
+// the following link was used to achieve the pulsating
+// effect of the main heading (i.e. "Ahsan Azim"):
 // http://www.tutorialspoint.com/jquery/effect-pulsate.htm
+
+// the following link was used to achieve the effect of the
+// navigation bar appear after a delay - in this case, only
+// when the main heading has stopped pulsating:
 // https://teamtreehouse.com/community/how-to-make-a-button-and-text-appear-after-a-delay
+
+// the following link was used to achieve a smooth scrolling
+// effect for when clicking on objects in the navigation bar:
 // http://stackoverflow.com/questions/21835012/onclick-function-based-on-element-id
+
 $(document).ready(function() {
   $("#nav_bar").hide().delay(2500).fadeIn();
   $(".main_heading").effect( "pulsate", {times:2}, 2500);
