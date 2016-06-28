@@ -6,12 +6,14 @@ $(document).ready(function() {
   $("#nav_bar").hide().delay(2500).fadeIn();
   $(".main_heading").effect( "pulsate", {times:2}, 2500);
   $("#nav_home").click(function() {
+    console.log("activated as well");
     $('html, body').animate({
       scrollTop: $( "#home_proxy" ).offset().top
     }, 500);
     return false;
   });
   $("#nav_this_website").click(function() {
+    console.log("activated");
     $('html, body').animate({
       scrollTop: $( "#this_website_proxy" ).offset().top
     }, 500);
