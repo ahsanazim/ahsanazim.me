@@ -15,7 +15,7 @@ $(document).ready(function() {
   $("#nav_this_website").click(function() {
     console.log("activated");
     $('html, body').animate({
-      scrollTop: $( "#this_website_proxy" ).offset().top
+      scrollTop: $( "#this_website_proxy" ).offset().top + 300
     }, 500);
     return false;
   });
