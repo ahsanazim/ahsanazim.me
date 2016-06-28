@@ -7,7 +7,7 @@ $(document).ready(function() {
   $(".main_heading").effect( "pulsate", {times:2}, 2500);
   $("#nav_home").click(function() {
     $('html, body').animate({
-      scrollTop: $( "#footer_div" ).offset().top
+      scrollTop: $( "#home_proxy" ).offset().top
     }, 500);
     return false;
   });
