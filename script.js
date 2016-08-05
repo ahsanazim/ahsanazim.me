@@ -1,4 +1,3 @@
-
 // the following link was used to achieve the pulsating
 // effect of the main heading (i.e. "Ahsan Azim"):
 // http://www.tutorialspoint.com/jquery/effect-pulsate.htm
@@ -41,10 +40,11 @@ $(document).ready(function() {
     }, 500);
     return false;
   });
-  $("#nav_lorem_ipsum").click(function() {
-    $('html, body').animate({
-      scrollTop: $( "#lorem_ipsum" ).offset().top - 50
-    }, 500);
-    return false;
-  });
 });
+// needed the underscore to blink, code taken from following link:
+// http://www.computerhope.com/issues/ch001651.htm
+function blinker() {
+  $('.blinking').fadeOut(650);
+  $('.blinking').fadeIn(650);
+}
+setInterval(blinker, 1350);

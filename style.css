@@ -3,24 +3,24 @@ html, body {
   height: 100%;
   margin: 0;
 }
-
 /* Making the main heading (i.e. "Ahsan Azim") full screen
    was achieved by adapting code from the following
    link:
    http://stackoverflow.com/questions/1719452/how-to-make-a-div-always-full-screen
 */
-
+/* figuring out how to make font scale with width:
+   http://stackoverflow.com/questions/16056591/font-scaling-based-on-width-of-container
+*/
 .main_heading {
   text-align: center;
   min-height: 100%;
-  background-color: black;
+  background-color: #000080;
   color: white;
-  font-variant: small-caps;
-  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-variant: normal;
+  font-family: 'Source Code Pro';
   font-weight: 200;
-  /*http://stackoverflow.com/questions/16056591/font-scaling-based-on-width-of-container*/
   font-size: 15em;
-  font-size: 20vw;
+  font-size: 18vw;
   margin: 0px;
   border-top-style: solid;
   border-top-width: medium;
@@ -28,7 +28,6 @@ html, body {
   padding: 10px;
   padding-top: 50px;
 }
-
 p {
   color: black;
   font-family: "HelveticaNeue-Light","Helvetica","Lucida Grande", "Arial", sans-serif;
@@ -37,7 +36,6 @@ p {
   margin-right:7px;
   width: 65%;
 }
-
 #footer_div {
   border-top-color: white;
   border-top-width: thick;
@@ -47,9 +45,8 @@ p {
   width: 100%;
   margin-top: 30px;
 }
-
 #footer {
-  font-family: Georgia, Serif;
+  font-family: 'Source Code Pro';
   background-color: black;
   line-height: 1.5em;
   text-align: center;
@@ -60,12 +57,10 @@ p {
   margin-left: 0px;
   margin-right: 0px;
 }
-
 #text_info {
   clear: left;
   padding: 3px;
 }
-
 #academic_interests_list {
   padding: 4px;
   font-family: "HelveticaNeue-Light","Helvetica","Lucida Grande", "Arial", sans-serif;
@@ -73,13 +68,12 @@ p {
   overflow: hidden;
   list-style-position:inside;
 }
-
 .blue {
   color: #00CCFF;
 }
-
 .sub_headings {
-  font-family: "HelveticaNeue-Light","Helvetica","Lucida Grande", "Arial", sans-serif;
+  font-family: Orbitron;
+  background-color: white;
   font-size: 2em;
   line-height: 1.5em;
   font-weight: lighter;
@@ -90,14 +84,13 @@ p {
   margin-left: 7px;
   padding-left: 30px;
   clear: left;
+  color: black;
 }
-
 .text_style {
   color: black;
   font-family: "HelveticaNeue-Light","Helvetica","Lucida Grande", "Arial", sans-serif;
   line-height: 1.5em;
 }
-
 /* Changing image sizes in the way outlined
   below was adapted, and in some cases
   copied, from the following link:
@@ -107,7 +100,6 @@ p {
   width: 200px;
   height: 120px;
 }
-
 .personal_img_container img {
   width: 100%;
   height: auto;
@@ -118,27 +110,22 @@ p {
   margin-bottom: 5px;
   padding-bottom: 10px;
 }
-
 .personal_img_small_container {
-  height:48px;
+  height:41px;
   width: auto;
 }
-
 .personal_img_small_container img {
   height:100%;
   width: auto;
 }
-
 .bio_text {
   float: right;
 }
-
 /* Note that the techniques and much of the code
  for the navigation bar was adapted, and in some
  cases copied, from the following link:
   http://www.w3schools.com/css/css_navbar.asp
 */
-
 #nav_bar {
   list-style-type: none;
   margin: 0;
@@ -153,19 +140,19 @@ p {
   border-bottom-width: thin;
 }
 .nav_bar_items {
-  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  /*font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;*/
+  font-family: 'Orbitron';
   float: left;
-  font-variant: small-caps;
+  font-variant: normal;
 }
-
 .nav_bar_items a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
+  padding-bottom: 10px;
   text-decoration: none;
 }
-
 /* Change the link color to #111 (black) on hover */
 .nav_bar_items a:hover {
   background-color: #505050;
