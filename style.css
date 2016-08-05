@@ -5,7 +5,7 @@ html, body {
 }
 /* Making the main heading (i.e. "Ahsan Azim") full screen
    was achieved by adapting code from the following
-   link:
+   link:    #000080 #262228
    http://stackoverflow.com/questions/1719452/how-to-make-a-div-always-full-screen
 */
 /* figuring out how to make font scale with width:
@@ -14,11 +14,11 @@ html, body {
 .main_heading {
   text-align: center;
   min-height: 100%;
-  background-color: #000080;
-  color: white;
+  background-color: white;
+  color: #18121E;
   font-variant: normal;
   font-family: 'Source Code Pro';
-  font-weight: 200;
+  font-weight: 80;
   font-size: 15em;
   font-size: 18vw;
   margin: 0px;
@@ -30,30 +30,28 @@ html, body {
 }
 p {
   color: black;
-  font-family: "HelveticaNeue-Light","Helvetica","Lucida Grande", "Arial", sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5em;
   margin-left: 20px;
   margin-right:7px;
   width: 65%;
 }
 #footer_div {
-  border-top-color: white;
-  border-top-width: thick;
-  border-top-style: dashed;
-  font-family: Cambria, Georgia, serif;
   background-color: black;
   width: 100%;
   margin-top: 30px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 #footer {
-  font-family: 'Source Code Pro';
+  font-family: 'Roboto', sans-serif;
   background-color: black;
-  line-height: 1.5em;
+  line-height: 1em;
   text-align: center;
   font-size: 1.0em;
   color: white;
   width: 100%;
-  padding: 15px;
+  padding: 5px;
   margin-left: 0px;
   margin-right: 0px;
 }
@@ -63,7 +61,7 @@ p {
 }
 #academic_interests_list {
   padding: 4px;
-  font-family: "HelveticaNeue-Light","Helvetica","Lucida Grande", "Arial", sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5em;
   overflow: hidden;
   list-style-position:inside;
@@ -72,7 +70,7 @@ p {
   color: #00CCFF;
 }
 .sub_headings {
-  font-family: Orbitron;
+  font-family: "HelveticaNeue-Light","Helvetica","Lucida Grande", "Arial", sans-serif;
   background-color: white;
   font-size: 2em;
   line-height: 1.5em;
@@ -88,7 +86,7 @@ p {
 }
 .text_style {
   color: black;
-  font-family: "HelveticaNeue-Light","Helvetica","Lucida Grande", "Arial", sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5em;
 }
 /* Changing image sizes in the way outlined
@@ -96,14 +94,21 @@ p {
   copied, from the following link:
   http://stackoverflow.com/questions/15685666/changing-image-sizes-proportionally-using-css
 */
+
+.bio_sec {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
 .personal_img_container {
-  width: 200px;
-  height: 120px;
+  width: 70%;
+  height: auto;
+  margin-left: 30px;
 }
 .personal_img_container img {
   width: 100%;
   height: auto;
-  float: left;
   margin-left:5px;
   margin-top:10px;
   margin-right: 5px;
@@ -118,9 +123,18 @@ p {
   height:100%;
   width: auto;
 }
+
 .bio_text {
-  float: right;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  padding-left: 30px;
 }
+
+#bio {
+  width: 100%
+}
+
 /* Note that the techniques and much of the code
  for the navigation bar was adapted, and in some
  cases copied, from the following link:
@@ -131,7 +145,7 @@ p {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: black;
+  background-color: #18121E;
   position: fixed;
   top: 0;
   width: 100%;
@@ -140,7 +154,7 @@ p {
   border-bottom-width: thin;
 }
 .nav_bar_items {
-  font-family: 'Orbitron';
+  font-family: 'Roboto', sans-serif;
   float: left;
   font-variant: normal;
 }
@@ -155,4 +169,8 @@ p {
 /* Change the link color to #111 (black) on hover */
 .nav_bar_items a:hover {
   background-color: #505050;
+}
+
+i {
+  color: white;
 }
