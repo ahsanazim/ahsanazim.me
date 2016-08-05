@@ -19,7 +19,7 @@ var showText = function (target, message, index, interval) {
 
 $(document).ready(function() {
   $("#nav_bar").hide().delay(2500).fadeIn();
-  showText("#home", "Ahsan Azim", 0, 2500);   
+  showText("#home", "Ahsan Azim", 0, 500);   
   $("#nav_home").click(function() {
     $('html, body').animate({
       scrollTop: $( "#home_proxy" ).offset().top
