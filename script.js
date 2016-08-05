@@ -1,7 +1,3 @@
-// the following link was used to achieve the pulsating
-// effect of the main heading (i.e. "Ahsan Azim"):
-// http://www.tutorialspoint.com/jquery/effect-pulsate.htm
-
 // the following link was used to achieve the effect of the
 // navigation bar appear after a delay - in this case, only
 // when the main heading has stopped pulsating:
@@ -11,18 +7,26 @@
 // effect for when clicking on objects in the navigation bar:
 // http://stackoverflow.com/questions/21835012/onclick-function-based-on-element-id
 
+
+var showText = function (target, message, index, interval) {
+  if (index < message.length) {
+    $(target).append(message[index++]);
+    setTimeout(function () { showText(target, message, index, interval); }, interval);
+  }
+}
+
+
+
 $(document).ready(function() {
   $("#nav_bar").hide().delay(2500).fadeIn();
-  // $(".main_heading").effect( "pulsate", {times:2}, 2500);
+  showText("#home", "Ahsan Azim", 0, 2500);   
   $("#nav_home").click(function() {
-    console.log("activated as well");
     $('html, body').animate({
       scrollTop: $( "#home_proxy" ).offset().top
     }, 500);
     return false;
   });
   $("#nav_this_website").click(function() {
-    console.log("activated");
     $('html, body').animate({
       scrollTop: $( "#this_website_proxy" ).offset().top - 50
     }, 500);
