@@ -90,20 +90,15 @@ p {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5em;
 }
-/* Changing image sizes in the way outlined
-  below was adapted, and in some cases
-  copied, from the following link:
-  http://stackoverflow.com/questions/15685666/changing-image-sizes-proportionally-using-css
-*/
 
 .bio_sec {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 
 .personal_img_container {
-  width: 70%;
+  width: 100%;
   height: auto;
   margin-left: 30px;
 }
@@ -125,11 +120,17 @@ p {
   width: auto;
 }
 
+#personal_pic {
+  height: 350px;
+  width: auto;
+  margin-left: 30px;
+}
+
 .bio_text {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
-  padding-left: 30px;
+  justify-content: space-around;
+  width: 700px;
 }
 
 #bio {

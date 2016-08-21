@@ -14,6 +14,7 @@ var showText = function (target, message, index, interval) {
     var $home = $('#home');
     $home.html($home.text().replace('|', '<span class="blinking">|</span>'));
   }
+  document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/ahsanazim/ahsanazim.me/gh-pages/imgs/ledge_overlook.jpg)";
 }
 
 $(document).ready(function() {
