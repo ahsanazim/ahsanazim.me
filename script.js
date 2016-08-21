@@ -19,7 +19,6 @@ var showText = function (target, message, index, interval) {
 $(document).ready(function() {
   $("#nav_bar").hide().delay(2500).fadeIn();
   showText("#home", "Ahsan Azim|", 0, 250);
-  setTimeout(function () { document.getElementById('home').style.backgroundImage = "url('https://raw.githubusercontent.com/ahsanazim/ahsanazim.me/gh-pages/imgs/ledge_overlook.jpg')"; }, 2500);
   $("#nav_home").click(function() {
     $('html, body').animate({
       scrollTop: $( "#home_proxy" ).offset().top
