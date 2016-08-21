@@ -173,6 +173,10 @@ p {
   background-color: #505050;
 }
 
+#home {
+  min-width: 100%;
+}
+
 i {
   color: white;
 }
