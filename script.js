@@ -27,13 +27,13 @@ $(document).ready(function() {
   });
   $("#nav_this_website").click(function() {
     $('html, body').animate({
-      scrollTop: $( "#this_website_proxy" ).offset().top - 50
+      scrollTop: $( "#this_website" ).offset().top
     }, 500);
     return false;
   });
   $("#nav_contact").click(function() {
     $('html, body').animate({
-      scrollTop: $( "#contact" ).offset().top - 50
+      scrollTop: $( "#contact" ).offset().top + 200
     }, 500);
     return false;
   });

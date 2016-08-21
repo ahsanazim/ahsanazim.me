@@ -12,6 +12,12 @@ html, body {
    http://stackoverflow.com/questions/16056591/font-scaling-based-on-width-of-container
 */
 
+.section {
+  margin:0px;
+  height: 100%;
+  width:100%;
+}
+
 .main_heading {
   text-align: center;
   min-height: 100%;
@@ -37,12 +43,22 @@ p {
   margin-right:7px;
   width: 65%;
 }
+
+#contact {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+#contact_info {
+  margin-top: 50px;
+}
+
 #footer_div {
   background-color: black;
   width: 100%;
-  margin-top: 30px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-top: 0.7px;
+  padding-bottom: 0.7px;
 }
 #footer {
   font-family: 'Roboto', sans-serif;
@@ -52,13 +68,14 @@ p {
   font-size: 1.0em;
   color: white;
   width: 100%;
-  padding: 5px;
+  padding: 0px;
   margin-left: 0px;
   margin-right: 0px;
 }
 #text_info {
   clear: left;
   padding: 3px;
+  margin-left: 30px;
 }
 #academic_interests_list {
   padding: 4px;
@@ -95,6 +112,7 @@ p {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
+  padding-bottom: 20px;
 }
 
 .personal_img_container {
@@ -179,4 +197,47 @@ p {
 
 i {
   color: white;
+}
+
+#about {
+  font-size: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+#cs_info {
+  font-size: 25px;
+  line-height: 2em;
+}
+
+#future_plans {
+  font-size: 25px;
+  line-height: 2em;
+}
+
+#contact_info {
+  font-size: 25px;
+  line-height: 2em;
+}
+
+#this_website {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+#contact_info {
+  padding-top: 165px;
+  padding-left: 75px;
+  padding-right: 75px;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#contact_info a i {
+  color: black;
+  font-size: 95px;
 }
