@@ -177,6 +177,7 @@ p {
   border-bottom-color: black;
   border-bottom-style: solid;
   border-bottom-width: thin;
+  transition: background-color 0.5s;
 }
 
 .nav_bar_items {
