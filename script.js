@@ -43,6 +43,23 @@ $(document).ready(function() {
     }, 500);
     return false;
   });
+  var scroll_start = 0;
+  var startchange = $('#about');
+  var offset = startchange.offset();
+   if (startchange.length){
+  $(document).scroll(function() {
+     scroll_start = $(this).scrollTop();
+     if(scroll_start > offset.top - 70) {
+       $("#nav_bar").css('background-color', 'white');
+       $(".nav_bar_items a").css('color', 'black');
+       $(".nav_bar_items a i").css('color', 'black');
+     } else {
+       $("#nav_bar").css('background-color', '#18121E');
+       $(".nav_bar_items a").css('color', 'white');
+       $(".nav_bar_items a i").css('color', 'white');
+     }
+  });
+   }
 });
 
 // needed the underscore to blink, code taken from following link:

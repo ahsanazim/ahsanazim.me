@@ -59,18 +59,18 @@ p {
 }
 
 #footer_div {
-  background-color: black;
+  background-color: white;
   width: 100%;
   padding-top: 0.7px;
   padding-bottom: 0.7px;
 }
 #footer {
   font-family: 'Roboto', sans-serif;
-  background-color: black;
+  background-color: white;
   line-height: 1em;
   text-align: center;
   font-size: 1.0em;
-  color: white;
+  color: black;
   width: 100%;
   padding: 0px;
   margin-left: 0px;
@@ -134,7 +134,7 @@ p {
   padding-bottom: 10px;
 }
 .personal_img_small_container {
-  height:41px;
+  height:44px;
   width: auto;
 }
 .personal_img_small_container img {
@@ -156,7 +156,8 @@ p {
 }
 
 #bio {
-  width: 100%
+  width: 100%;
+  color: black;
 }
 
 /* Note that the techniques and much of the code
@@ -173,10 +174,11 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-  border-bottom-color: white;
+  border-bottom-color: black;
   border-bottom-style: solid;
   border-bottom-width: thin;
 }
+
 .nav_bar_items {
   font-family: 'Roboto', sans-serif;
   float: left;
@@ -190,9 +192,11 @@ p {
   padding-bottom: 10px;
   text-decoration: none;
 }
-/* Change the link color to #111 (black) on hover */
+
+
+/* Change the link color to black on hover */
 .nav_bar_items a:hover {
-  background-color: #505050;
+  box-shadow: 0 10px 6px -2px gray;
 }
 
 #home {
@@ -213,6 +217,7 @@ i {
 #cs_info {
   font-size: 25px;
   line-height: 2em;
+  color: black;
 }
 
 #future_plans {
@@ -232,7 +237,7 @@ i {
 }
 
 #contact_info {
-  padding-top: 165px;
+  padding-top: 180px;
   padding-left: 75px;
   padding-right: 75px;
   display: flex;
