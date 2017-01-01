@@ -2,6 +2,7 @@
 <html>
 
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ahsanazim.me</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type = "text/javascript" src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -15,19 +16,35 @@
   <body>
     <div id="home_proxy"></div>
     <ul id="nav_bar">
-      <li class="nav_bar_items" id="nav_home"><a href=#home>home</a></li>
-      <li class="nav_bar_items" id="nav_about"><a href=#about>about</a></li>
-      <li class="nav_bar_items" id="nav_this_website"><a href=#this_website>this website</a></li>
-      <li class="nav_bar_items" id="nav_contact"><a href=#contact>contact</a></li>
-      <li class="nav_bar_items" id="github"><a href="https://github.com/ahsanazim"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-      <li class="nav_bar_items" id="linkedin"><a href="https://www.linkedin.com/in/ahsanazim1"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      <li class="nav_bar_items deprecate" id="nav_home"><a href=#home>home</a></li>
+      <li class="nav_bar_items deprecate" id="nav_about"><a href=#about>about</a></li>
+      <li class="nav_bar_items deprecate" id="nav_this_website"><a href=#this_website>this website</a></li>
+      <li class="nav_bar_items deprecate" id="nav_contact"><a href=#contact>contact</a></li>
+      <li class="nav_bar_items deprecate" id="github"><a href="https://github.com/ahsanazim"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      <li class="nav_bar_items deprecate" id="linkedin"><a href="https://www.linkedin.com/in/ahsanazim1"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      <input type="checkbox" id="toggle">
       <li class="nav_bar_items" style="float:right">
-        <div class="personal_img_small_container">
+        <div class="personal_img_small_container deprecate">
           <img id="personal_pic_small" src="https://raw.githubusercontent.com/ahsanazim/ahsanazim.me/gh-pages/imgs/official_photo.jpg">
         </div>
+        <div class="mobile_menu_button dep_opposite">
+          <label class="dep_opposite" for="toggle">Menu</label>
+        </div>
       </li>
+      <div class="menu_screen">
+        <ul id="ms_top">
+          <li id="ms_logo">ahsan azim</li>
+          <li id="ms_x"><label for="toggle">x</label></li>
+        </ul>
+        <ul id="ms_rest">
+          <li><a href=#home>home</a></li>
+          <li><a href=#about>about</a></li>
+          <li><a href=#this_website>this website</a></li>
+          <li><a href=#contact>contact</a></li>
+        </ul>
+      </div>
     </ul>
-    <div  class="main_heading" id="home"></div>
+    <div class="main_heading" id="home"></div>
     <div class="section" id="about">
       <div class="bio_sec">
         <img id="personal_pic" src="https://raw.githubusercontent.com/ahsanazim/ahsanazim.me/gh-pages/imgs/self_pic.jpg">
