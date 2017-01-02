@@ -6,7 +6,7 @@
 
 // showing my name letter by letter:
 // http://stackoverflow.com/questions/7264974/show-text-letter-by-letter
-/*
+
 var showText = function (target, message, index, interval) {
   if (index < message.length) {
     $(target).append(message[index++]);
@@ -69,4 +69,3 @@ function blinker() {
   $('.blinking').fadeIn(650);
 }
 setInterval(blinker, 1350);
-*/
