@@ -1,40 +1,43 @@
 html, body {
-  height: 100%;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 15px;
+  font-family: monospace;
 }
-
-/*I'm an aspiring software developer studying Computer Science at Dartmouth, and this summer I'll
-be working as a full stack engineer in IBM's Watson Health team.*/
 
 #content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background-color: white;
-    color: black;
-}
-
-.title_container {
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex: 1 0 auto;
-  flex-flow: row nowrap;
-  align-items: center;
-  padding: 0px 0px 0px 50px;
-  font-size: 6em;
-  font-family: 'Lora', serif;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+  color: black;
 }
 
 .body_container {
   padding: 0px 50px 50px 50px;
-  font-family: 'Lora', sans-serif;
-  font-size: 30px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
+}
+
+#title {
+  text-decoration: underline;
+}
+
+span {
+  font-weight: bold
+}
+
+ul {
+  list-style: none;
+  line-height: 22px;
 }
 
 #contact_info {
@@ -46,15 +49,20 @@ be working as a full stack engineer in IBM's Watson Health team.*/
   margin-top: 100px;
 }
 
-a {
-  color: black;
-}
-
 #contact_info a {
   color: black;
-  font-size: 30px;
+  font-size: 18px;
   padding-right: 20px;
   opacity: 0.8;
+}
+
+/* https://teamtreehouse.com/library/css-flexbox-layout/building-a-layout-with-flexbox/creating-a-sticky-footer-with-flexbox */
+#sticky_footer {
+  margin-top: auto;
+  padding-bottom: 5px;
+  font-style: italic;
+  text-align: center;
+  font-size: 11px;
 }
 
 
@@ -66,6 +74,8 @@ a {
 
 @media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
 
-/* nothing here yet */
+  .body_container {
+    padding-left: 20px;
+  }
 
 }
